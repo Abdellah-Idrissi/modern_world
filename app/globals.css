@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply w-[15px] h-[15px] 
+}
+
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-800  hover:bg-neutral-700 transition-colors duration-200 rounded-[8px] ;
+  border: 5px solid transparent;
+  background-clip: content-box;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-white !shadow-lg 
+}
+
+.swiper-button-prev {
+  @apply !bg-blue-500
+}
+
+.background-animate {
+  background-size: 400%;
+
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
