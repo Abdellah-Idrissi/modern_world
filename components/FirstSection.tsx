@@ -14,9 +14,9 @@ export default function FirstSection() {
   const ref1 = useRef(null)
   const ref2 = useRef(null)
   const ref3 = useRef(null)
-  const isInView1 = useInView(ref1)
-  const isInView2 = useInView(ref2)
-  const isInView3 = useInView(ref3)
+  const isInView1 = useInView(ref1,{once:true})
+  const isInView2 = useInView(ref2,{once:true})
+  const isInView3 = useInView(ref3,{once:true})
 
 
   const parentVariants = {
@@ -61,7 +61,7 @@ export default function FirstSection() {
             <h2 className={`font-secondFont text-[40px] xm:text-[55px] md:text-[60px] text-center leading-none lg:hidden`}>architectures</h2>
           </motion.div>
 
-          <motion.p variants={item} className="text-[#252525cf] text-[14px] xm:text-[15px] md:text-[16px] text-center mx-auto max-w-[230px] xm:max-w-[265px] md:max-w-[285px]  lg:max-w-[550px]">Experience the seamless integration of creativity and aesthetics as architects push boundaries to create structures that captivate the eye and inspire the mind
+          <motion.p variants={item} className="text-[#252525cf] text-[14px] xm:text-[15px] md:text-[16px] text-center mx-auto max-w-[245px] xm:max-w-[315px] md:max-w-[335px]  lg:max-w-[550px]">Experience the seamless integration of creativity and aesthetics as architects push boundaries to create structures that captivate the eye and inspire the mind
           </motion.p>
 
         </motion.div>

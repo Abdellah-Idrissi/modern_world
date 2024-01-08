@@ -4,6 +4,7 @@ import './globals.css'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import favicon from "../public/favicon.ico"
+import CustomCursor from '@/components/CustomCursor';
 
 
 const mainFont = localFont({
@@ -88,7 +89,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`scroll-smooth scroll-pt-8 ${secondFont.variable}`}>
-      <body className={`${mainFont.className}  font-normal relative overflow-x-hidden`} suppressHydrationWarning >{children}</body>
+      <body className={`${mainFont.className}  font-normal relative overflow-x-hidden`} suppressHydrationWarning >
+        {children}
+        <CustomCursor />
+      </body>
     </html>
   )
 }

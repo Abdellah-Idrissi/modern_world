@@ -20,9 +20,9 @@ import p10 from "../public/p10.jpg"
 
 export default function SecondSection() {
   const ref1 = useRef(null)
-  const isInView1 = useInView(ref1)
+  const isInView1 = useInView(ref1,{once:true})
   const ref2 = useRef(null)
-  const isInView2 = useInView(ref2)
+  const isInView2 = useInView(ref2,{once:true})
 
 
 
@@ -64,7 +64,7 @@ export default function SecondSection() {
               <h2 className={`font-secondFont text-[38px] xm:text-[55px] md:text-[60px] text-center leading-[1.1] lg:hidden`}>worldwide</h2>
             </motion.div>
 
-            <motion.p variants={item} className="text-[#252525cf]  text-[14px] xm:text-[15px] md:text-[16px] text-center mx-auto max-w-[230px] xm:max-w-[265px]  lg:max-w-[560px]">In every corner of the world, we craft aesthetic buildings, each standing as a timeless work of art that captures the essence of modern and futuristic aesthetics
+            <motion.p variants={item} className="text-[#252525cf]  text-[14px] xm:text-[15px] md:text-[16px] text-center mx-auto max-w-[270px] xm:max-w-[300px] md:max-w-[320px] lg:max-w-[560px]">In every corner of the world, we craft aesthetic buildings, each standing as a timeless work of art that captures the essence of modern and futuristic aesthetics
             </motion.p>
 
         </motion.div>

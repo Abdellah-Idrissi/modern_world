@@ -6,9 +6,9 @@ import Image from "next/image";
 
 export default function ThirdSection() {
   const ref1 = useRef(null)
-  const isInView1 = useInView(ref1)
+  const isInView1 = useInView(ref1,{once:true})
   const ref2 = useRef(null)
-  const isInView2 = useInView(ref2)
+  const isInView2 = useInView(ref2,{once:true})
 
   const parentVariants = {
     show: {
@@ -48,7 +48,7 @@ export default function ThirdSection() {
             <h2 className={`font-secondFont text-[38px] xm:text-[55px] md:text-[60px] text-center leading-[1.1] lg:hidden`}>testimonials</h2>
           </motion.div>
 
-          <motion.p variants={item} className="text-[#252525cf] mt-1 text-[14px] xm:text-[15px] md:text-[16px] text-center mx-auto max-w-[230px] xm:max-w-[265px]  lg:max-w-[560px]">The voices of satisfaction as clients share their experiences with our cutting-edge modern buildings and visionary architectures
+          <motion.p variants={item} className="text-[#252525cf] mt-1 text-[14px] xm:text-[15px] md:text-[16px] text-center mx-auto max-w-[230px]  xm:max-w-[265px] md:max-w-[290px]  lg:max-w-[560px]">The voices of satisfaction as clients share their experiences with our cutting-edge modern buildings and visionary architectures
           </motion.p>
 
       </motion.div>

@@ -7,7 +7,7 @@ import { useRef } from "react";
 
 export default function Hero() {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref,{once:true});
   const fadeDownVariants = {
     hidden: { opacity: 0, y: -15 },
     show: { opacity: 1, y: 0, transition: { type: "Inertia" } },
@@ -36,7 +36,7 @@ export default function Hero() {
 
           </motion.div>
 
-          <motion.p variants={fadeDownVariants} className="text-[14px] px-6 xm:px-0 xm:text-[15px] sm:text-[16px] text-center max-w-[300px] xm:max-w-[340px] sm:max-w-[430px] md:max-w-[450px] mx-auto">
+          <motion.p variants={fadeDownVariants} className="text-[14px] px-6 xm:px-0 xm:text-[15px] sm:text-[16px] text-center max-w-[310px] xm:max-w-[340px] sm:max-w-[430px] md:max-w-[450px] mx-auto">
             In a world where every structure tells a unique story, we redefine architectural excellence by crafting modern, imaginative buildings that push the skyline&apos;s boundaries. Elevate your surroundings with our innovative approach to design.
           </motion.p>
 
