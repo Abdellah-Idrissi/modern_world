@@ -25,7 +25,7 @@ export default function Footer() {
             className="flex flex-col sm:flex-row gap-y-5 items-center justify-between "
           >
             <div className=" text-xs text-center order-1 sm:order-none  ">© {new Date().getFullYear()} Modern World. All rights reserved.</div>
-            <div className=" text-xs text-center ">Made with <span className="text-[10px]">🖤</span> and <span className="text-[10px]">☕️</span> by <a href="#">Abdellah</a></div>
+            <div className=" text-xs text-center ">Made with <span className="text-[10px]">🖤</span> and <span className="text-[10px]">☕️</span></div>
 
           </motion.div>
         </section>
